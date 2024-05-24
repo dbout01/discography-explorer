@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b0e0e6;
+}
+
+header {
+    background-color: #b0e0e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #b0e0e6;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.album-name {
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.tracks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.track {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #b0e0e6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    color: black;
+    bottom: 0;
+}
+
+header h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}

@@ -1,26 +1,49 @@
-console.log("Try npm run lint/fix!");
+// src/index.ts
+// @ts-ignore
+import { fetchAlbums } from './api/albums.js';
 
-const longString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet diam.';
-
-const trailing = 'Semicolon'
-
-			const why={am:'I tabbed?'};
-
-const iWish = "I didn't have a trailing space..."; 
-
-const sicilian = true;;
-
-const vizzini = (!!sicilian) ? !!!sicilian : sicilian;
-
-const re = /foo   bar/;
-
-export function doSomeStuff(withThis: string, andThat: string, andThose: string[]) {
-    //function on one line
-    if(!Boolean(andThose.length)) {return false;}
-    console.log(withThis);
-    console.log(andThat);
-    console.dir(andThose);
-    console.log(longString, trailing, why, iWish, vizzini, re);
-    return;
+interface Album {
+  id: number;
+  title: string;
+  artist: string;
+  coverUrl: string;
+  tracks: { id: number; title: string }[];
 }
-// TODO: more examples
+
+const renderAlbums = (albums: Album[]): void => {
+  const gallery = document.getElementById('image-gallery');
+  if (!gallery) {
+    console.error('Gallery element not found');
+    return;
+  }
+
+  albums.forEach(album => {
+    const albumDiv = document.createElement('div');
+    albumDiv.className = 'album';
+
+    const img = document.createElement('img');
+    img.src = album.coverUrl;
+    img.alt = album.title;
+
+    const title = document.createElement('p');
+    title.className = 'album-name';
+    title.textContent = album.title;
+
+    albumDiv.appendChild(img);
+    albumDiv.appendChild(title);
+    gallery.appendChild(albumDiv);
+  });
+};
+
+const loadAlbums = async (): Promise<void> => {
+  try {
+    const albums = await fetchAlbums();
+    renderAlbums(albums);
+  } catch (error) {
+    console.error('Failed to load albums:', error);
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadAlbums();
+});

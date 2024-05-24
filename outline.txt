@@ -1,0 +1,69 @@
+Configuration and Tooling:
+1. **.editorconfig**
+   - Configuration options for text editors to ensure consistent coding styles.
+
+2. **.eslintignore**
+   - Specifies files and directories to be ignored by ESLint.
+
+3. **.eslintrc.json**
+   - Configuration options for ESLint to specify linting rules and settings for JavaScript code.
+
+4. **.prettierrc.js**
+   - Configuration options for Prettier to specify code formatting rules and settings.
+
+5. **.estlint.config.mjs**
+   - Additional configuration options for ESLint, possibly in a different format or with specific settings.
+
+6. **package-lock.json**
+   - Contains information about exact versions of dependencies installed in the project, ensuring consistent builds.
+
+Source Code:
+7. **src (folder)**
+   - Contains the source code of the application, including TypeScript or JavaScript files, stylesheets, and HTML templates.
+
+8. **index.html**
+   - Main HTML template for the homepage of the application, defining its structure and content.
+
+9. **index.js**
+   - Entry point for JavaScript code, responsible for initializing components, handling events, or making API requests.
+
+10. **index.ts**
+    - Entry point for TypeScript code, similar to index.js but written in TypeScript.
+
+11. **main.js**
+    - Contains JavaScript code for the main functionality of the application, such as initializing components and making API requests.
+
+12. **styles.css**
+    - CSS stylesheet defining the visual appearance and layout of HTML elements in the application.
+
+13. **tsconfig.json**
+    - Configuration options for the TypeScript compiler, specifying how TypeScript files should be compiled into JavaScript and other settings related to TypeScript development.
+
+
+Folders:
+14. **album-details (folder)**
+    - Contains files related to displaying details about specific albums, including track listings, cover art, and metadata.
+
+15. **api (folder)**
+    - Contains files related to handling API requests and responses, including fetching albums and other data from a backend server.
+
+16. **browse-albums (folder)**
+    - Contains components or pages related to browsing and viewing a list of albums available in the application.
+
+17. **gts-main (folder)**
+    - Possibly contains configuration files or scripts related to Google TypeScript Style (GTS), a set of TypeScript style rules and configurations.
+
+18. **node_modules (folder)**
+    - Contains all dependencies installed for the project, typically managed by npm or yarn.
+
+19. **photos (folder)**
+    - Contains image files, such as album cover art, to be displayed on the website.
+
+20. **router (folder)**
+    - Contains files related to routing in the application, handling navigation between different pages or views.
+
+21. **search-functionality (folder)**
+    - Contains files related to implementing search functionality within the application, allowing users to search for albums, tracks, or other content.
+
+22. **view-tracklists (folder)**
+    - Contains components or pages related to viewing tracklists for individual albums.
