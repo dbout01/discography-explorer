@@ -47,6 +47,6 @@ I found these websites useful in developing this software:
 
 The following items I plan to fix, improve, and/or add to this project in the future:
 
-* [ ] First thing here
-* [ ]
-* [ ]
+* [ ] Add the function that throws "song/album does not exist" when a user types something other than album/song into the searchbar
+* [ ] Add website links
+* [ ] Add populated lyrics
