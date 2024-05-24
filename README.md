@@ -41,7 +41,7 @@ I found these websites useful in developing this software:
 * [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 * [YouTube](youtube.com)
 * [ESLint.org](https://eslint.org/docs/latest/use/getting-started)
-* [Fandom] (https://arianagrande.fandom.com)
+* [Fandom](https://arianagrande.fandom.com)
 
 ## Future Work
 
